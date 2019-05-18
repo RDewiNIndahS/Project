@@ -1,0 +1,14 @@
+D:\KerjaanKiki\Project\ProjectGetPost\ProjectGetPost\bin\Debug\netcoreapp2.1\ProjectGetPost.deps.json
+D:\KerjaanKiki\Project\ProjectGetPost\ProjectGetPost\bin\Debug\netcoreapp2.1\ProjectGetPost.runtimeconfig.json
+D:\KerjaanKiki\Project\ProjectGetPost\ProjectGetPost\bin\Debug\netcoreapp2.1\ProjectGetPost.runtimeconfig.dev.json
+D:\KerjaanKiki\Project\ProjectGetPost\ProjectGetPost\bin\Debug\netcoreapp2.1\ProjectGetPost.dll
+D:\KerjaanKiki\Project\ProjectGetPost\ProjectGetPost\obj\Debug\netcoreapp2.1\ProjectGetPost.csprojAssemblyReference.cache
+D:\KerjaanKiki\Project\ProjectGetPost\ProjectGetPost\obj\Debug\netcoreapp2.1\ProjectGetPost.csproj.CoreCompileInputs.cache
+D:\KerjaanKiki\Project\ProjectGetPost\ProjectGetPost\obj\Debug\netcoreapp2.1\ProjectGetPost.RazorAssemblyInfo.cache
+D:\KerjaanKiki\Project\ProjectGetPost\ProjectGetPost\obj\Debug\netcoreapp2.1\ProjectGetPost.RazorAssemblyInfo.cs
+D:\KerjaanKiki\Project\ProjectGetPost\ProjectGetPost\obj\Debug\netcoreapp2.1\ProjectGetPost.AssemblyInfoInputs.cache
+D:\KerjaanKiki\Project\ProjectGetPost\ProjectGetPost\obj\Debug\netcoreapp2.1\ProjectGetPost.AssemblyInfo.cs
+D:\KerjaanKiki\Project\ProjectGetPost\ProjectGetPost\obj\Debug\netcoreapp2.1\ProjectGetPost.RazorTargetAssemblyInfo.cache
+D:\KerjaanKiki\Project\ProjectGetPost\ProjectGetPost\bin\Debug\netcoreapp2.1\ProjectGetPost.pdb
+D:\KerjaanKiki\Project\ProjectGetPost\ProjectGetPost\obj\Debug\netcoreapp2.1\ProjectGetPost.dll
+D:\KerjaanKiki\Project\ProjectGetPost\ProjectGetPost\obj\Debug\netcoreapp2.1\ProjectGetPost.pdb
