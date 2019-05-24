@@ -1,6 +1,7 @@
 # Project
 Code Stored Procedure 
 Untuk code yang saya gunakan pada stored procedure : 
+1. Untuk Insert Data
 
 USE [LOS_KALBAR_DATA]
 GO
@@ -37,4 +38,25 @@ BEGIN
   
 END  
 
+2. Untuk Get Data 
+USE [LOS_KALBAR_DATA]
+GO
+/****** Object:  StoredProcedure [dbo].[stpGetAll]    Script Date: 24/05/2019 09:42:23 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+--Store procedure name is --> stpGetAllMembers  
+ALTER PROCEDURE [dbo].[stpGetAll]  
+AS  
+BEGIN  
+    -- SET NOCOUNT ON added to prevent extra result sets from  
+    -- interfering with SELECT statements.  
+    SET NOCOUNT ON;  
+  
+    -- Select statements for procedure here  
+    Select * from dbo.APP_OTHERCOLDETAILS  
+END  
 
