@@ -15,5 +15,6 @@ namespace ProjectGetPost.Models
         }
         public DbSet<APP_MINIMUM_DE> app_minimum_de { get; set; }
         public DbSet<APP_SPOUSE> app_spouse { get; set; }
+        public DbSet<APP_OTHERCOLDETAILS> app_othercoldetails { get; set; }
     }
 }

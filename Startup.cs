@@ -32,6 +32,7 @@ namespace ProjectGetPost
             services.AddDbContext<DbContex>(x => x.UseSqlServer(Configuration["ConnectionString"]));
             services.AddScoped<IAPP_MINIMUM_DE, APP_MINIMUM_DESERVICE>();
             services.AddScoped<IAPP_SPOUSE, APP_SPOUSEService>();
+            services.AddScoped<IAPP_OTHERCOLDETAILS, APP_OTHERCOLDETAILService>();
             var appSettingSection = Configuration.GetSection("AppSettings");
         }
 
