@@ -9,24 +9,23 @@ using ProjectGetPost.Models;
 
 namespace ProjectGetPost.Controllers
 {
-    [Route("api/app_othercoldetails")]
+    [Route("api/collateral")]
     [ApiController]
-    public class APP_OTHERCOLSDETAILSController : ControllerBase
+    public class COLLATERALController : ControllerBase
     {
-        private IAPP_OTHERCOLDETAILS _app_othercoldetails;
+        private ICOLLATERAL _collateral;
 
-        public APP_OTHERCOLSDETAILSController(IAPP_OTHERCOLDETAILS app_othercoldetails)
+        public COLLATERALController(ICOLLATERAL collateral)
         {
-            _app_othercoldetails = app_othercoldetails;
+            _collateral = collateral;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            //return await this.userDataProvider.GetUsers();
             try
             {
-                var data = await _app_othercoldetails.GetAll();
+                var data = await _collateral.GetAll();
                 return Ok(new
                 {
                     response_code = "00",
@@ -45,16 +44,16 @@ namespace ProjectGetPost.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody]APP_OTHERCOLDETAILS app_othercoldetails)
+        public IActionResult Create([FromBody]COLLATERAL collateral)
         {
             try
             {
-                var data = _app_othercoldetails.Create(app_othercoldetails);
+                var data = _collateral.Create(collateral);
                 return Ok(new
                 {
                     response_code = "00",
                     response_desc = "Sukses",
-                    AP_REGNO = data.AP_REGNO
+                    data = data
                 });
             }catch(Exception e)
             {
@@ -65,19 +64,6 @@ namespace ProjectGetPost.Controllers
                     response_desc = "Gagal"
                 });
             }
-        }
-
-        [HttpPost]
-        [Route("coba")]
-        public IActionResult Insert([FromBody]APP_OTHERCOLDETAILS app_othercoldetails)
-        {
-            var data =_app_othercoldetails.Insert(app_othercoldetails);
-            return Ok(new
-            {
-                response_code = "00",
-                response_desc = "Sukses",
-                AP_REGNO = data.AP_REGNO
-            });
         }
     }
 }

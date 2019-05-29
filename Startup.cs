@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using ProjectGetPost.Models;
 using ProjectGetPost.Services;
 using Microsoft.EntityFrameworkCore;
@@ -33,6 +25,13 @@ namespace ProjectGetPost
             services.AddScoped<IAPP_MINIMUM_DE, APP_MINIMUM_DESERVICE>();
             services.AddScoped<IAPP_SPOUSE, APP_SPOUSEService>();
             services.AddScoped<IAPP_OTHERCOLDETAILS, APP_OTHERCOLDETAILService>();
+            services.AddScoped<IRFDETAILCOLLATERAL, RFDETAILCOLLATERALService>();
+            services.AddScoped<IRFCOLTYPE, RFCOLTYPEService>();
+            services.AddScoped<ICOLLATERAL, COLLATERALService>();
+            services.AddScoped<IAPP_COLMESIN, APP_COLMESINService>();
+            services.AddScoped<IAPP_COLKENDARAAN, APP_COLKENDARAANService>();
+            services.AddScoped<IAPP_COLTANAHBANGUNAN, APP_COLTANAHBANGUNANService>();
+            services.AddScoped<IAPP_COLSURATBERHARGA, APP_COLSURATBERHARGAService>();
             var appSettingSection = Configuration.GetSection("AppSettings");
         }
 
